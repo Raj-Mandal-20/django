@@ -10,12 +10,7 @@ from django.shortcuts import render
 def index(request):
     
     return render(request, 'index.html')
-    # return HttpResponse('''
-        # <h1> Home </h1> <br>
-        # <a href="/about"> About </a><br>
-        # <a href="/menu"> Menu </a> <br>
-        # <a href="/settings"> Settings </a>               
-    # ''')
+    
 
 def about(request):
     return HttpResponse('''
