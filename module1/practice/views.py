@@ -8,8 +8,8 @@ from django.shortcuts import render
 
 #Practice For Video no 7
 def index(request):
-    
-    return render(request, 'index.html')
+    params = {'name' : 'Raj', 'place' : 'India'}
+    return render(request, 'index.html', params)
     
 
 def about(request):
