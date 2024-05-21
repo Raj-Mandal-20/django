@@ -13,10 +13,8 @@ def index(request):
     
 
 def about(request):
-    return HttpResponse('''
-        <h1> About </h1> <br>
-        <a href="/"> Home </a>
-                        ''')
+    print(request.GET.get('typedData', 'default'))
+    return render(request, 'about.html')
 
 def menu(request):
     return HttpResponse('''
@@ -29,3 +27,6 @@ def settings(requsest):
         <h1> Settings </h1> <br>
         <a href="/"> Home </a>
                         ''')
+    
+def textAnalyze(request):
+    return render(request, 'textanalyze.html')

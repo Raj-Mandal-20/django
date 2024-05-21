@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.index, name="Home"),
     path('about', views.about, name="Home"),
     path('menu', views.menu, name="menu"),
-    path('settings', views.settings, name="settings")
+    path('settings', views.settings, name="settings"),
+    path('textanalyze', views.textAnalyze, name="textAnalyze"),
     
 ]
