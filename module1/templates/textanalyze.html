@@ -8,8 +8,13 @@
 <body>
     
     <h1> Text Analyze</h1>
-    <form action="/about" method='GET'>
-        <textarea name="typedData" style="margin : auto; width: 983px; height: 199px;"></textarea>
+    <form action="/about" method='GET' style="min-width: 300px; margin : auto">
+        <textarea name="typedData" style="width: 95vw; height: 150px;"></textarea>
+        <br>
+
+        <input type="checkbox" name="isChecked" id="inChecked">
+        <label for="isChecked"> Remove Punctuation</label>
+        <br>
         <button type="submit">Analyze Text</button>
     </form>
     <br>
